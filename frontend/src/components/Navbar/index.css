@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+*{
+    box-sizing: border-box;
+}
+.navbar-container {
+    width: 100vw;
+    height: 50px;
+    padding: 5px 20px;
+    font-family: 'DM Sans', sans-serif;
+    border-bottom: 1px solid #25252D;
+}
+
+.logo{
+    font-family: 'Syne', sans-serif;
+}
+
+.btn{
+    padding: 0px 5px;
+    height: 25px !important;
+}
+
+.btnn{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.btn p{
+    background-color: transparent;
+}
+
+.green-dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00ff00;
+}
+
+/* ── Mobile responsive ── */
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 5px 12px;
+    }
+    .navbar-container .btn {
+        display: none;
+    }
+    .logo {
+        font-size: 14px;
+    }
+}
